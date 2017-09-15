@@ -28,6 +28,7 @@ public class Ball : MonoBehaviour {
 
     void Awake ()
     {
+        startPostition = transform.position;
 
         ballMovement = transform.position;
 
@@ -38,9 +39,14 @@ public class Ball : MonoBehaviour {
         ResetBall();
     }
 
-	void FixedUpdate ()
+    void FixedUpdate ()
     {
-		if(currentTimer > 0)
+        Movement();
+	}
+
+    void Movement()
+    {
+        if (currentTimer > 0)
         {
             currentTimer -= Time.deltaTime;
             return;
@@ -48,11 +54,11 @@ public class Ball : MonoBehaviour {
 
         ballMovement = transform.position;
 
-        ballMovement.x = currentSpeed ;
+        ballMovement.x = currentSpeed;
         ballMovement.y = randomY;
 
         transform.position += ballMovement * Time.deltaTime;
-	}
+    }
 
     void ResetBall()
     {

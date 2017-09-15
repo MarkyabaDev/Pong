@@ -19,9 +19,9 @@ public class PlayerController : MonoBehaviour {
 
 
 	// Use this for initialization
-	void Start ()
+	void Awake ()
     {
-        
+        playerNr = (PlayerNr)PlayerPrefs.GetInt("Player1");
 	}
 	
 	// Update is called once per frame
@@ -34,12 +34,16 @@ public class PlayerController : MonoBehaviour {
         else if(playerNr == PlayerNr.PlayerTwo)
         {
             playerMovement = Input.GetAxis("VerticalPlayer2");
-        }
+        }      
 
+	}
+
+    private void FixedUpdate()
+    {
         Vector3 movement = transform.position;
 
         if (playerNr != PlayerNr.AI)
-        {          
+        {
             movement.y += playerMovement * speed * Time.deltaTime;
 
             movement.y = Mathf.Clamp(movement.y, -3.5f, 3.5f);
@@ -54,6 +58,5 @@ public class PlayerController : MonoBehaviour {
 
             transform.position = movement;
         }
-
-	}
+    }
 }

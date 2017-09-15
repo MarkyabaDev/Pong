@@ -140,7 +140,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 90, y: 282.00006}
+  m_AnchoredPosition: {x: 90, y: 90}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &75894776
@@ -344,7 +344,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4482354701246358, guid: 78f5b5e143a5e0e4a8cc760910220224, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 8.5
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 4482354701246358, guid: 78f5b5e143a5e0e4a8cc760910220224, type: 2}
       propertyPath: m_LocalPosition.y
@@ -402,6 +402,12 @@ Prefab:
     - {fileID: 61647431766199412, guid: 78f5b5e143a5e0e4a8cc760910220224, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 78f5b5e143a5e0e4a8cc760910220224, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &365082275 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114968559269849504, guid: 78f5b5e143a5e0e4a8cc760910220224,
+    type: 2}
+  m_PrefabInternal: {fileID: 365082274}
+  m_Script: {fileID: 11500000, guid: 922cca34e962027488a7cdefd1732ede, type: 3}
 --- !u!1 &384780543
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,6 +834,8 @@ MonoBehaviour:
   right: {fileID: 1381232974}
   rendererPlayerOne: {fileID: 1125142287}
   rendererPlayerTwo: {fileID: 1394376797}
+  player1: {fileID: 1817365265}
+  player2: {fileID: 365082275}
 --- !u!4 &1164711451
 Transform:
   m_ObjectHideFlags: 0
@@ -1303,7 +1311,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4482354701246358, guid: 78f5b5e143a5e0e4a8cc760910220224, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -8.5
+      value: -7.5
       objectReference: {fileID: 0}
     - target: {fileID: 4482354701246358, guid: 78f5b5e143a5e0e4a8cc760910220224, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1356,6 +1364,12 @@ Prefab:
     - {fileID: 61647431766199412, guid: 78f5b5e143a5e0e4a8cc760910220224, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 78f5b5e143a5e0e4a8cc760910220224, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1817365265 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114968559269849504, guid: 78f5b5e143a5e0e4a8cc760910220224,
+    type: 2}
+  m_PrefabInternal: {fileID: 1817365264}
+  m_Script: {fileID: 11500000, guid: 922cca34e962027488a7cdefd1732ede, type: 3}
 --- !u!1 &2123408367
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,7 +1402,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -80, y: 282}
+  m_AnchoredPosition: {x: -80, y: 90}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2123408369
